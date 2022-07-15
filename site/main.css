@@ -1,4 +1,15 @@
 
+/* Hide scrollbar in Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display:none;
+  }
+ 
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+   -ms-overflow-style: none; /* IE and EDGE */;
+    scrollbar-width: none; /* Firefox */
+  }
+  
 *{
     box-sizing: border-box;
 }
@@ -6,43 +17,95 @@
 body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .header-con{
     display: flex;
-    background-color: #eee;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    height: 90px;  
 }
 
 .header-logo{
-    justify-content: left;
-    width: 200px;
     padding: 5px;
-    
+    display: flex;
 }
 
-.header-list{
-    width: 100%;
-    justify-content: right;
+.header-logo h3{
+    Color : #111;
+    font-size: 25px;
     padding: 5px;
-    color: gold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.header-logo img{
+    height: 90px;
+    margin: 0;
+    /* background-color: gold; */
+    border-radius: 70%;
+    
+}
+.header-list{
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-list ul{
-    display: inline-block;
+    display: flex;
+    list-style: none;
+    width: auto;
+    margin-top: 20px;
+    
     
 }
 
 .header-list ul li{
-    margin-left: 10px;
-    padding: 10px;
-    font-size: 15px;
-    background-color: #222;
+    display: inline-block;
+    padding: 7px;
+    margin-right: 5px;
+    /* background-color: #444; */
+    
+
 }
 
 .header-list ul li a{
+    padding: 10px;
     text-decoration: none;
     cursor: pointer;
-    
+    color: #222;
 }
 
+.header-list ul li a:hover{
+    background-color: #fff;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.main-vp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.left-column{
+    background-color: aquamarine;
+    width: 50%;
+    height: 100vh;
+}
+
+
+.right-column{
+    background-color: lightcoral;
+    width: 50%;
+    height: 100vh;
+}
+
+.projects-container{
+    background-color: seagreen;
+    height: 50px;
+    margin-top: 0px;
+}
