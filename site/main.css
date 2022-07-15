@@ -12,3 +12,37 @@ body{
     display: flex;
     background-color: #eee;
 }
+
+.header-logo{
+    justify-content: left;
+    width: 200px;
+    padding: 5px;
+    
+}
+
+.header-list{
+    width: 100%;
+    justify-content: right;
+    padding: 5px;
+    color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-list ul{
+    display: inline-block;
+    
+}
+
+.header-list ul li{
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #222;
+}
+
+.header-list ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
